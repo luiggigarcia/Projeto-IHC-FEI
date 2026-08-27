@@ -1,100 +1,105 @@
 # Projeto de Interação Humano-Computador (IHC)
 
-> **Template acadêmico para documentação do projeto no GitHub.**  
-> Substitua todo texto entre `{{...}}`, remova exemplos que não se aplicam e mantenha evidências no próprio repositório sempre que possível.
+> **Projeto acadêmico de IHC derivado do TCC em andamento.**
 
 ## Princípio do projeto da disciplina
 
-A disciplina utiliza **preferencialmente o tema do TCC em andamento** como domínio para exercitar os métodos de Interação Humano-Computador.
+A disciplina utiliza preferencialmente o tema do TCC em andamento como domínio para exercitar os métodos de Interação Humano-Computador.
 
-Isso vale também quando o TCC é predominantemente técnico e **não previa o desenvolvimento de uma interface**.
+Neste projeto, o TCC é predominantemente técnico e não prevê originalmente o desenvolvimento de uma interface. Dessa forma, a disciplina de IHC será utilizada para derivar um possível escopo de interação a partir da contribuição técnica desenvolvida no TCC, investigando quem poderia utilizar ou se beneficiar do resultado, quais atividades precisaria realizar, em qual contexto e quais formas de interação poderiam apoiar essas atividades.
 
-- Se o TCC **já prevê interface**, ela pode ser o objeto principal das atividades de IHC.
-- Se o TCC **não prevê interface**, a equipe deverá derivar um **escopo de IHC** a partir da contribuição técnica: quem poderia utilizar ou se beneficiar do resultado, o que essa pessoa precisaria fazer, em qual contexto e que interação seria necessária.
-- A interface criada na disciplina **não se torna automaticamente uma obrigação do TCC**. Ela pode ser um protótipo de aprendizagem, uma extensão conceitual ou uma demonstração de aplicação potencial. Sua incorporação ao TCC depende de decisão da equipe e do orientador.
+A interface explorada neste projeto de IHC representa uma extensão conceitual do TCC e não constitui, neste momento, uma obrigação de implementação no trabalho de conclusão.
 
 Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do TCC](GUIA_ESCOPO_IHC.md).
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
-**Orientador(a):** {{NOME}}  
+**Título do projeto de IHC:** Interface para análise comportamental de aplicações em ambiente sandbox  
+**TCC/projeto de origem:** Implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis em sistemas operacionais  
+**Orientador(a):** Leonardo Anjoletto  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** Centro Universitário FEI  
+**Semestre:** 2026/2
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Luiggi Paschoalini Garcia | 22.122.006-4 | luiggigarcia | Desenvolvimento e documentação do projeto |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | Implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis em sistemas operacionais. |
+| Resultado técnico esperado do TCC | Ambiente sandbox capaz de executar aplicações potencialmente não confiáveis de forma controlada e permitir a observação, coleta e análise de seus comportamentos e efeitos sobre o sistema operacional. |
+| O TCC já previa interface? | Não |
+| Capacidade técnica que pode gerar valor para pessoas | Permitir a execução controlada de aplicações e a análise aprofundada de seu comportamento no sistema operacional, incluindo processos, arquivos, recursos utilizados, atividades de rede, alterações de configurações e outros eventos relevantes. |
+| Usuários principais adotados em IHC | Profissionais de Segurança da Informação, profissionais de Infraestrutura de TI, pesquisadores e estudantes de Computação e Segurança da Informação. |
+| Objetivo principal desses usuários | Executar aplicações em um ambiente controlado e compreender, por meio das evidências coletadas, como elas interagem com o sistema operacional. |
+| Interface/recorte explorado na disciplina | Interface para seleção e execução de aplicações, acompanhamento do ambiente sandbox, visualização e interpretação dos eventos coletados e geração/consulta de relatórios de análise. |
+| Relação com o escopo formal do TCC | Extensão conceitual / protótipo demonstrativo |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
 ## Resumo do projeto pela perspectiva do usuário
 
-Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolhido, o que precisa alcançar, qual problema enfrenta ou qual atividade precisa executar, em qual contexto e como a contribuição do TCC se relaciona com essa situação.
+Profissionais de Segurança da Informação, profissionais de Infraestrutura de TI, pesquisadores e estudantes precisam compreender como determinadas aplicações se comportam durante sua execução e quais efeitos produzem no sistema operacional. Atualmente, uma análise aprofundada desse comportamento pode exigir a utilização de diferentes ferramentas e a interpretação de diversas informações técnicas. O tema do TCC investiga a implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis, permitindo observar e coletar informações sobre suas ações no sistema operacional. Para fins da disciplina de IHC, será explorada uma interface que permita aos usuários executar aplicações em ambiente controlado, acompanhar seu comportamento, consultar as evidências coletadas e obter um relatório estruturado da análise.
 
-Evite começar pela tecnologia.
-
-> **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
-
-Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
+> Afirmações sobre necessidades específicas dos usuários, processos atualmente utilizados e preferências de interação serão tratadas como hipóteses até que sejam investigadas nas próximas entregas.
 
 ## Por que pensar em interface mesmo em TCCs técnicos?
 
-Algoritmos, modelos, APIs, análises de datasets e componentes de infraestrutura podem não exigir interface como resultado acadêmico do TCC. Porém, quando essas contribuições são transferidas para uma situação real, normalmente existem pessoas que:
+Embora o TCC tenha como foco principal a implementação e análise do ambiente sandbox, sua aplicação potencial envolve pessoas que precisam interagir com os resultados produzidos pelo sistema.
 
-- configuram parâmetros;
-- fornecem ou selecionam dados;
-- iniciam ou acompanham processamento;
-- interpretam resultados;
-- comparam alternativas;
-- tomam decisões;
-- administram usuários e permissões;
-- consultam histórico;
-- geram relatórios;
-- investigam erros;
-- auditam mudanças.
+Um ambiente desse tipo pode ser utilizado por diferentes perfis, incluindo profissionais de Segurança da Informação, profissionais de Infraestrutura de TI, pesquisadores e estudantes. Esses usuários podem precisar:
 
-Essas atividades fornecem um campo legítimo para exercitar IHC.
+- selecionar aplicações para análise;
+- iniciar e acompanhar uma execução;
+- observar processos e atividades realizadas;
+- verificar alterações em arquivos e configurações;
+- analisar utilização de recursos computacionais;
+- observar atividades de rede;
+- consultar eventos registrados durante a execução;
+- interpretar os resultados obtidos;
+- consultar análises anteriores;
+- gerar relatórios;
+- comparar resultados de diferentes execuções;
+- investigar comportamentos específicos.
 
-Possibilidades de interface incluem **dashboards, telas administrativas, configuração, relatórios, histórico com filtros, comparação de resultados, visualização de dados, acompanhamento de processamento, gestão de perfis e permissões, CRUDs justificados pelo domínio, alertas, auditoria e ajuda contextual**. Nenhuma dessas telas é obrigatória por si só: deve existir uma tarefa e um objetivo de usuário que a justifique.
+Essas atividades fornecem um campo para exercitar os métodos de IHC e investigar como as informações produzidas pelo ambiente sandbox podem ser apresentadas de forma compreensível e útil.
+
+A interface será definida progressivamente ao longo das entregas da disciplina. Não serão assumidos elementos de interface apenas por serem comuns em sistemas computacionais; cada funcionalidade deverá estar relacionada a uma atividade ou objetivo identificado para os usuários.
 
 ## Relação com apresentação e potencial de aplicação
 
-A reflexão sobre usuários ajuda a equipe a explicar o projeto para públicos externos, inclusive em eventos como a **INOVA**. Em vez de comunicar apenas a técnica implementada, a equipe pode apresentar:
+A reflexão sobre usuários ajuda a apresentar o projeto para públicos externos, inclusive em eventos acadêmicos e de inovação, como a INOVA.
 
-**problema humano → contribuição computacional → forma de uso → impacto potencial**.
+Em vez de apresentar somente os mecanismos técnicos utilizados para implementar o sandbox, o projeto pode ser comunicado a partir da relação:
 
-O protótipo de IHC pode, portanto, funcionar como uma demonstração do potencial de mercado, transferência tecnológica ou impacto extensionista do tema do TCC, sem necessariamente integrar a implementação final do trabalho de conclusão.
+**problema humano → contribuição computacional → forma de uso → impacto potencial**
+
+O sandbox pode possuir aplicações potenciais nas áreas de Segurança da Informação e Infraestrutura de TI, além de ambientes de pesquisa e ensino.
+
+Para profissionais de Segurança da Informação, o ambiente pode apoiar a investigação do comportamento de aplicações potencialmente não confiáveis.
+
+Para profissionais de Infraestrutura, pode possibilitar a observação dos impactos de determinadas aplicações sobre o sistema operacional e seus recursos.
+
+Para pesquisadores e estudantes, pode fornecer um ambiente controlado para experimentação, investigação e aprendizado sobre o funcionamento de aplicações e sua interação com o sistema operacional.
+
+O protótipo de IHC poderá funcionar como uma demonstração desse potencial de aplicação, sem necessariamente integrar a implementação final do TCC.
 
 ## Como usar este repositório
 
 1. Leia o [Guia de uso e apresentação](GUIA_DE_USO.md).
-2. Leia o [Guia de definição de escopo de IHC](GUIA_ESCOPO_IHC.md), especialmente se o TCC não previa interface.
+2. Leia o [Guia de definição de escopo de IHC](GUIA_ESCOPO_IHC.md), especialmente porque o TCC não prevê originalmente uma interface.
 3. Preencha as entregas na ordem em que forem trabalhadas na disciplina.
-4. Em toda entrega individual, **identifique o autor**.
+4. Em toda entrega individual, identifique o autor.
 5. Salve imagens, diagramas e evidências em [`assets/`](assets/README.md).
 6. Mantenha a [Matriz de rastreabilidade](RASTREABILIDADE.md) atualizada.
 7. Na Entrega 1, diferencie **[F] fatos**, **[H] hipóteses** e **[?] lacunas de conhecimento**.
 8. Antes de cada entrega, revise o checklist do arquivo e o [Checklist final](CHECKLIST_FINAL.md).
-9. Sempre que uma evidência posterior contrariar uma hipótese inicial, **revise o projeto**. IHC é um processo iterativo.
+9. Sempre que uma evidência posterior contrariar uma hipótese inicial, revise o projeto. IHC é um processo iterativo.
 
 ## Entregas
 
@@ -121,9 +126,25 @@ O protótipo de IHC pode, portanto, funcionar como uma demonstração do potenci
 
 O projeto deve formar uma cadeia de evidências:
 
-**tema/contribuição do TCC → possível aplicação → usuários/stakeholders → objetivos → problema/contexto → alternativas → necessidades → personas → cenários → tarefas → modelo conceitual → MoLIC → protótipo → planejamento → inspeção → teste com usuários → melhorias**.
+**tema/contribuição do TCC → possível aplicação → usuários/stakeholders → objetivos → problema/contexto → alternativas → necessidades → personas → cenários → tarefas → modelo conceitual → MoLIC → protótipo → planejamento → inspeção → teste com usuários → melhorias**
 
-Uma entrega não deve “reiniciar” o projeto. Se o escopo de IHC foi criado para um DBA, por exemplo, as personas, tarefas, MoLIC, protótipo e avaliação devem permanecer coerentes com esse perfil, salvo quando novas evidências justificarem a revisão.
+Para este projeto, a cadeia parte da capacidade técnica do sandbox e investiga progressivamente como essa capacidade poderia ser utilizada por diferentes perfis.
+
+O foco inicial será compreender a necessidade de executar aplicações em ambiente controlado e analisar de maneira aprofundada seus efeitos sobre o sistema operacional.
+
+As entregas seguintes deverão investigar e validar:
+
+- quais perfis possuem maior interesse na solução;
+- quais atividades realizariam;
+- quais informações consideram mais relevantes;
+- como ferramentas existentes apresentam essas informações;
+- quais dificuldades existem nas alternativas atuais;
+- como os resultados poderiam ser organizados;
+- quais interações são realmente necessárias;
+- como uma interface poderia apoiar a análise;
+- como avaliar a qualidade dessa interação.
+
+Uma entrega não deve reiniciar o projeto. As decisões tomadas nas etapas iniciais deverão ser utilizadas como base para personas, cenários, tarefas, modelo conceitual, MoLIC, protótipo e avaliações posteriores, salvo quando novas evidências justificarem a revisão do projeto.
 
 ## Documentos de apoio
 
