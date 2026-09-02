@@ -1,131 +1,136 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
-**Responsabilidade:** 1 solução consolidada por equipe
-
-## Objetivo da atividade
-
-Reinterpretar o tema do TCC sob a perspectiva de Interação Humano-Computador e construir um **entendimento comum entre os integrantes da equipe**.
-
-A disciplina utiliza preferencialmente o tema do TCC para os exercícios de IHC. Isso vale tanto para TCCs que já preveem uma interface quanto para trabalhos cujo resultado principal é algoritmo, modelo, API, biblioteca, análise de dados, infraestrutura, estudo experimental ou outro artefato técnico.
-
-> **Importante:** a interface projetada na disciplina é um artefato de aprendizagem de IHC. Ela **não se torna automaticamente uma obrigação do TCC**. Sua incorporação ao trabalho de conclusão depende de decisão da equipe e do orientador.
-
-Antes de preencher, leia [`../GUIA_ESCOPO_IHC.md`](../GUIA_ESCOPO_IHC.md).
-
-Nesta primeira semana a equipe **não deve começar desenhando telas**. Primeiro deverá compreender:
-
-- o que o TCC realmente produz;
-- quem poderia obter valor dessa contribuição;
-- quais pessoas interagem, administram, configuram, interpretam ou são afetadas;
-- o que essas pessoas precisam alcançar;
-- como atividades relacionadas acontecem hoje;
-- problemas, limitações e contexto;
-- alternativas existentes;
-- qual recorte de interação fará sentido para a disciplina.
-
-Ao final desta entrega, a equipe deve diferenciar:
-
-- **tema do TCC** × **escopo formal do TCC** × **escopo de IHC da disciplina**;
-- **objetivo do projeto** × **objetivo do usuário**;
-- **problema do usuário** × **solução tecnológica**;
-- **fato conhecido** × **hipótese** × **lacuna de conhecimento**;
-- **capacidade técnica** × **forma de uso dessa capacidade**;
-- **funcionalidade** × **atividade/resultado que o usuário precisa alcançar**;
-- **usuário direto** × **stakeholders**.
-
----
-
-## Como classificar as respostas
-
-Sempre que a resposta fizer uma afirmação sobre usuários, problemas, atividades, necessidades, contexto ou mercado, use:
-
-- **[F] Fato conhecido** — existe evidência/fonte.
-- **[H] Hipótese** — afirmação plausível que ainda precisa ser investigada.
-- **[?] Não sabemos ainda** — lacuna relevante.
-
-Quando usar `[F]`, informe a origem. Hipóteses prioritárias devem receber IDs (`H01`, `H02`...) e também ser registradas em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
-
-> **Exemplo:** `[H] H01 — DBAs considerariam útil comparar automaticamente o plano atual de execução com uma recomendação produzida pelo algoritmo.`
-
-Uma hipótese explicitada é melhor do que uma suposição escondida.
+> **Autor:** Luiggi Paschoalini Garcia  
+> **Matrícula:** 22.122.006-4  
+> **TCC:** Implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis em sistemas operacionais.  
+> **Orientador:** Leonardo Anjoletto  
+> **Disciplina:** Interação Humano-Computador  
+> **Instituição:** Centro Universitário FEI  
+> **Semestre:** 2026/2
 
 ---
 
 # 0. Identificação do TCC e da equipe
 
-## 0.1 Membros
+## 0.1 Membro
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Luiggi Paschoalini Garcia | 22.122.006-4 | @luiggigarcia |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+> **Implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis em sistemas operacionais.**
 
-## 0.3 Orientador(a)
+## 0.3 Orientador
 
-{{...}}
+> **Leonardo Anjoletto**
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
-Marque e descreva:
+- [ ] Sistema/aplicação interativa
+- [ ] Algoritmo
+- [ ] Modelo de IA/ML/LLM
+- [ ] Biblioteca/API/Framework
+- [ ] Análise de dataset
+- [x] Estudo/benchmark/avaliação experimental
+- [x] Infraestrutura/backend
+- [ ] Componente embarcado/IoT
+- [x] Outro: **Ambiente sandbox para execução controlada e análise comportamental de aplicações**
 
-- [ ] sistema/aplicação interativa;
-- [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
-- [ ] biblioteca/API/framework;
-- [ ] análise de dataset;
-- [ ] estudo/benchmark/avaliação experimental;
-- [ ] infraestrutura/backend;
-- [ ] componente embarcado/IoT;
-- [ ] outro: {{...}}.
+### Descrição
 
-**Descrição:** {{...}}
+O TCC prevê a implementação e análise de um ambiente sandbox destinado à execução controlada de aplicações potencialmente não confiáveis.
+
+O ambiente deverá permitir que aplicações sejam executadas de maneira isolada e que seus comportamentos durante a execução sejam observados e analisados.
+
+A proposta envolve investigar quais ações são realizadas pela aplicação no sistema operacional, quais componentes são afetados, quais alterações são produzidas e quais recursos computacionais são utilizados, possibilitando a coleta e organização dessas informações para posterior análise.
+
+---
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
 - [ ] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
-- [ ] Não. O TCC é predominantemente técnico e não previa interface.
+- [x] **Não. O TCC é predominantemente técnico e não previa interface.**
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+### Explicação
 
-> Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
+O escopo formal do TCC está concentrado na implementação e análise de um ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis em sistemas operacionais.
+
+O desenvolvimento de uma interface gráfica não constitui, neste momento, um requisito formal do TCC.
+
+Para a disciplina de IHC, será derivado um escopo de interação a partir da contribuição técnica do TCC, buscando investigar como diferentes perfis de usuários poderiam utilizar o ambiente e compreender as informações obtidas durante as análises.
 
 ---
 
 # 1. Entendendo a contribuição do projeto
 
-## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
+## 1.1 Explique o TCC em uma frase
 
-{{...}}
+> **O TCC implementa e analisa um ambiente controlado capaz de executar aplicações potencialmente não confiáveis e observar de forma estruturada seus comportamentos e efeitos sobre o sistema operacional.**
+
+---
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+**[H] H01 —**
 
-## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
+A motivação do TCC está na possibilidade de realizar uma análise mais aprofundada do comportamento de aplicações potencialmente não confiáveis durante sua execução em um sistema operacional.
 
-Complete, se ajudar:
+Uma aplicação pode realizar diversas operações durante sua execução, como criação de processos, alteração de arquivos, modificações de configurações, utilização de recursos e comunicação de rede, que podem não ser facilmente compreendidas apenas pela observação convencional de sua execução.
 
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
+Dessa forma, o projeto busca investigar a utilização de um ambiente controlado que permita executar essas aplicações e observar de maneira estruturada **o que elas fazem no sistema operacional, quais componentes alteram, como essas alterações ocorrem e quais recursos utilizam**.
 
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
+A hipótese inicial é que a disponibilização dessas informações de maneira organizada pode contribuir para uma análise mais aprofundada do comportamento das aplicações, especialmente em contextos de Segurança da Informação, Infraestrutura, pesquisa e ensino.
 
-{{...}}
+**[?] Lacuna de conhecimento**
 
-## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
+Ainda não foi investigado empiricamente quais dessas informações são consideradas mais relevantes pelos diferentes perfis de usuários e quais dificuldades eles enfrentam atualmente durante esse tipo de análise.
 
-{{[F/H/?] ...}}
+---
 
-## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
+## 1.3 Qual é a capacidade/contribuição central produzida pelo TCC?
 
-| Mérito/contribuição técnica | Possível aplicação/valor em uso |
+> **Nosso TCC produz a capacidade de executar aplicações potencialmente não confiáveis em um ambiente controlado e analisar, de maneira estruturada, seu comportamento e seus efeitos sobre o sistema operacional.**
+
+Essa capacidade envolve potencialmente:
+
+- observar processos criados e encerrados;
+- identificar alterações em arquivos;
+- identificar alterações em configurações do sistema;
+- observar utilização de recursos computacionais;
+- observar atividades de rede;
+- registrar eventos ocorridos durante a execução;
+- organizar as evidências coletadas;
+- permitir uma análise posterior do comportamento observado.
+
+A definição exata das categorias monitoradas ainda será refinada durante o desenvolvimento técnico do TCC.
+
+---
+
+## 1.4 O que se espera que esteja diferente se a contribuição for bem-sucedida?
+
+**[H] H02 —**
+
+Espera-se que seja possível analisar o comportamento de uma aplicação potencialmente não confiável de maneira mais estruturada e aprofundada, reduzindo a dependência de observações manuais ou da consulta isolada a diferentes fontes de informação.
+
+Para profissionais de Segurança da Informação e Infraestrutura, isso pode contribuir para uma compreensão mais detalhada dos efeitos produzidos por determinada aplicação.
+
+Para pesquisadores e estudantes, pode proporcionar um ambiente controlado para experimentação e estudo do comportamento de aplicações e sua interação com o sistema operacional.
+
+---
+
+## 1.5 Mérito técnico/científico × aplicação prática
+
+| Mérito/contribuição técnica do TCC | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Implementação de um ambiente sandbox para execução controlada. | Executar aplicações potencialmente não confiáveis sem depender diretamente do ambiente operacional principal. |
+| Isolamento da aplicação durante a execução. | Criar um contexto controlado para experimentação e investigação. |
+| Monitoramento do comportamento da aplicação. | Observar como uma aplicação interage com o sistema operacional. |
+| Coleta de eventos e evidências. | Apoiar uma análise mais aprofundada do comportamento observado. |
+| Análise dos efeitos produzidos pela aplicação. | Identificar alterações realizadas e recursos utilizados. |
+| Avaliação do ambiente desenvolvido. | Identificar capacidades, limitações e possibilidades de utilização da solução. |
 
 ---
 
@@ -133,29 +138,64 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
+> **NÃO SE APLICA AO ESCOPO ORIGINAL.**
 
-{{[F/H/?] ...}}
+O TCC não prevê originalmente uma interface de usuário.
 
-## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
+---
 
-Considere perfis profissionais e stakeholders, não apenas consumidores finais.
+## 2.2 Quem poderia usar, configurar, administrar, operar, interpretar ou tomar decisões?
+
+Neste momento, consideramos os seguintes perfis potenciais:
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| **Analista de Segurança da Informação** | Usuário direto potencial | Executaria aplicações potencialmente não confiáveis e investigaria seu comportamento. | [H] |
+| **Profissional de Infraestrutura de TI** | Usuário direto potencial | Avaliaria impactos de aplicações sobre o sistema operacional e seus recursos. | [H] |
+| **Pesquisador de Computação/Sistemas** | Usuário direto potencial | Utilizaria o ambiente para realizar experimentos controlados. | [H] |
+| **Pesquisador de Segurança da Informação** | Usuário direto potencial | Investigaria comportamentos e técnicas utilizadas pelas aplicações. | [H] |
+| **Estudante de Computação** | Usuário direto potencial | Utilizaria o ambiente para aprendizado e experimentação. | [H] |
+| **Estudante de Segurança da Informação** | Usuário direto potencial | Estudaria na prática o comportamento de aplicações e mecanismos de segurança. | [H] |
+| **Administrador do ambiente** | Usuário operacional potencial | Configuraria e manteria o ambiente utilizado para as análises. | [H] |
+
+### Observação metodológica
+
+Os perfis acima representam hipóteses iniciais derivadas do domínio do TCC.
+
+A Entrega 2 e as entregas posteriores deverão fornecer evidências para priorizar os perfis e compreender melhor suas necessidades.
+
+---
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
+**[H]**
+
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Responsável pela Segurança da Informação | Pode utilizar os resultados das análises para apoiar decisões de segurança. | Possivelmente não | [H] |
+| Responsável pela Infraestrutura | Pode utilizar informações sobre impactos no sistema operacional. | Possivelmente não | [H] |
+| Orientador/pesquisador responsável | Pode avaliar resultados obtidos em experimentos. | Não necessariamente | [H] |
+| Organização que utiliza o ambiente | Pode se beneficiar de análises realizadas antes da execução de aplicações em ambientes confiáveis. | Não necessariamente | [H] |
+
+---
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
-Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
+**[H]**
 
-{{[F/H/?] ...}}
+Os perfis considerados possuem diferentes níveis de conhecimento técnico e diferentes objetivos.
+
+Profissionais de Segurança da Informação podem possuir familiaridade com processos, eventos, redes, arquivos, indicadores de comprometimento e análise de comportamento.
+
+Profissionais de Infraestrutura podem possuir maior interesse nos impactos sobre recursos e componentes do sistema operacional.
+
+Pesquisadores e estudantes podem necessitar de maior contextualização e explicação das informações apresentadas.
+
+A interface deverá considerar a possibilidade de diferentes níveis de conhecimento técnico, evitando assumir que todos os usuários interpretarão automaticamente informações de baixo nível produzidas pelo sistema.
+
+**[?] Lacuna de conhecimento**
+
+Ainda não sabemos qual nível de conhecimento deverá ser considerado como padrão para o usuário principal nem quais informações precisam de explicações adicionais.
 
 ---
 
@@ -163,59 +203,162 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 ## 3.1 O que o usuário está tentando conseguir no mundo real?
 
-Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
+**[H]**
 
-{{[F/H/?] ...}}
+O usuário pretende **compreender o comportamento de uma aplicação durante sua execução e identificar quais ações ela realiza sobre o sistema operacional**, utilizando evidências obtidas em um ambiente controlado.
+
+O objetivo não é simplesmente "usar o sandbox".
+
+O objetivo é:
+
+> **Executar → observar → compreender → analisar.**
+
+---
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Selecionar a aplicação que será analisada | Usuário de análise | Média / Alta | [H] |
+| A02 | Preparar os parâmetros da análise | Usuário de análise | Média / Alta | [H] |
+| A03 | Executar a aplicação no ambiente controlado | Usuário de análise | Alta / Alta | [H] |
+| A04 | Acompanhar o comportamento durante a execução | Usuário de análise | Alta / Alta | [H] |
+| A05 | Identificar alterações produzidas no sistema | Usuário de análise | Alta / Alta | [H] |
+| A06 | Analisar os eventos e evidências coletados | Usuário de análise | Alta / Alta | [H] |
+| A07 | Interpretar os resultados da execução | Usuário de análise | Alta / Alta | [H] |
+| A08 | Registrar ou consultar os resultados da análise | Usuário de análise | Média / Média | [H] |
+
+---
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+**[H]**
 
-## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
+A execução e análise de aplicações tende a ser a atividade central do processo, pois constitui a finalidade principal do ambiente.
 
-{{[F/H/?] ...}}
+Entretanto, ainda não é possível determinar sua frequência real sem investigar o contexto dos diferentes perfis de usuários.
+
+---
+
+## 3.4 Qual parece mais crítica?
+
+**[H]**
+
+A atividade potencialmente mais crítica é a **interpretação dos resultados da execução**, pois o valor da análise não está apenas na coleta de eventos, mas na capacidade de compreender o que esses eventos representam.
+
+Uma interpretação incorreta ou incompleta pode levar o usuário a tirar conclusões inadequadas sobre o comportamento da aplicação.
 
 ---
 
 # 4. Entendendo o problema ou processo atual
 
-## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
+## 4.1 Como essas atividades são realizadas hoje?
 
-Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
+**[H]**
 
-{{[F/H/?] ...}}
+Existem diferentes abordagens possíveis para investigar o comportamento de aplicações, incluindo execução em máquinas virtuais ou ambientes isolados, ferramentas de monitoramento do sistema operacional, análise de processos, monitoramento de arquivos e registros, captura de tráfego de rede e análise de logs.
+
+Ferramentas como o **Process Monitor**, da Microsoft Sysinternals, permitem observar em tempo real atividades relacionadas ao sistema de arquivos, Registro e processos/threads do Windows.
+
+Soluções específicas de sandbox, como **Cuckoo Sandbox**, permitem submeter arquivos para análise e gerar resultados como logs, relatórios, capturas e informações relacionadas à execução.
+
+O **Windows Sandbox**, por sua vez, fornece um ambiente isolado e descartável para executar aplicações e arquivos não confiáveis.
+
+Portanto, a hipótese inicial é que uma análise aprofundada pode envolver a combinação de diferentes mecanismos e ferramentas, dependendo do objetivo da investigação.
+
+**[?] Lacuna de conhecimento**
+
+Ainda precisamos investigar qual combinação de ferramentas e processos é utilizada pelos perfis que pretendemos priorizar e quais limitações eles encontram nesse processo.
+
+---
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+**[H]**
 
-## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
+Uma possível dificuldade está na quantidade de informações produzidas durante uma execução.
 
-{{[F/H/?] ...}}
+Eventos de processos, arquivos, registros, rede e recursos podem gerar grande quantidade de dados, tornando necessário identificar quais eventos são relevantes para a análise.
 
-## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
+Outra possível dificuldade é a necessidade de utilizar diferentes ferramentas ou fontes de informação para obter uma visão completa do comportamento da aplicação.
 
-{{[F/H/?] ...}}
+Também pode existir dificuldade de interpretação quando as informações são apresentadas apenas em formato técnico ou como grandes volumes de logs.
 
-## 4.5 Conte uma situação concreta.
+**[?] Lacuna de conhecimento**
 
-Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
+Essas dificuldades ainda precisam ser validadas com evidências sobre usuários reais e ferramentas existentes.
 
-{{[F/H/?] narrativa...}}
+---
+
+## 4.3 Que informações o profissional precisa interpretar?
+
+**[H]**
+
+Inicialmente, consideramos relevantes:
+
+- processos criados;
+- processos encerrados;
+- processos filhos;
+- árvore de processos;
+- arquivos criados;
+- arquivos modificados;
+- arquivos excluídos;
+- alterações em configurações;
+- alterações no Registro, quando aplicável;
+- conexões de rede;
+- endereços e portas utilizados;
+- consumo de CPU;
+- consumo de memória;
+- utilização de disco;
+- sequência temporal dos eventos;
+- eventos potencialmente suspeitos.
+
+A relevância e prioridade de cada categoria ainda deverá ser investigada.
+
+---
+
+## 4.4 O que acontece quando a atividade falha ou o resultado é interpretado incorretamente?
+
+**[H]**
+
+Uma interpretação incorreta pode levar o usuário a compreender de maneira equivocada o comportamento da aplicação.
+
+Por exemplo, uma alteração realizada no sistema pode ser considerada irrelevante quando possui importância para a análise, ou um comportamento legítimo pode ser interpretado como suspeito.
+
+Além disso, caso o ambiente não consiga registrar determinada atividade, o resultado da análise pode ficar incompleto.
+
+**[H]**
+
+Em um contexto de Segurança da Informação, uma conclusão inadequada pode influenciar decisões posteriores sobre permitir, bloquear, investigar ou encaminhar determinada aplicação.
+
+---
+
+## 4.5 Conte uma situação concreta
+
+**[H]**
+
+Um profissional recebe um arquivo executável cuja procedência ou comportamento ainda não é conhecido.
+
+Antes de executá-lo diretamente em uma máquina utilizada para atividades importantes, ele deseja compreender o que a aplicação realiza durante sua execução.
+
+O profissional precisa executar o arquivo em um ambiente controlado e observar suas ações.
+
+Durante a execução, podem ocorrer criação de processos, alterações em arquivos, modificações de configurações, utilização de recursos e comunicações de rede.
+
+O profissional precisa então analisar essas ocorrências e compreender quais delas são relevantes para determinar o comportamento da aplicação.
+
+Caso as informações estejam dispersas ou sejam difíceis de interpretar, o profissional poderá ter dificuldade para construir uma visão completa do que ocorreu durante a execução.
+
+---
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Microsoft Learn — Windows Sandbox | Existência de ambiente isolado para execução de aplicações e arquivos não confiáveis. | Não representa necessariamente o processo completo de análise comportamental. |
+| Microsoft Learn — Process Monitor | Monitoramento de arquivos, Registro e processos/threads em tempo real. | É uma ferramenta técnica de monitoramento, não necessariamente uma solução completa de sandbox/análise. |
+| Documentação do Cuckoo Sandbox | Execução e monitoramento de arquivos em ambiente isolado e geração de resultados. | É uma solução específica e não representa todos os possíveis contextos de uso. |
+| ANY.RUN — Interactive Sandbox | Demonstra que análise interativa de aplicações/malware pode envolver execução em VM, acompanhamento em tempo real e relatórios. | Produto comercial específico e voltado principalmente à análise de ameaças. |
 
 ---
 
@@ -223,185 +366,393 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+**[H]**
+
+A interação poderia ocorrer em um laboratório de Segurança da Informação, ambiente acadêmico de pesquisa, laboratório de ensino, equipe de Segurança da Informação ou ambiente de Infraestrutura de TI.
+
+O contexto dependeria do perfil que for priorizado nas próximas etapas.
+
+---
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+**[H]**
+
+A interação provavelmente ocorreria em um computador desktop ou notebook, utilizando teclado, mouse e monitor para configurar a análise, acompanhar a execução e consultar os resultados.
+
+---
 
 ## 5.3 Existem condições físicas relevantes?
 
-Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
+**[H]**
 
-{{[F/H/?] ...}}
+Por se tratar de uma atividade predominantemente técnica, a análise provavelmente ocorrerá em ambiente de trabalho ou estudo, com necessidade de concentração e visualização de informações técnicas.
+
+Dependendo do contexto, privacidade das amostras, interrupções e pressão de tempo podem ser fatores relevantes.
+
+**[?] Lacuna de conhecimento**
+
+Ainda não temos evidências suficientes para afirmar quais condições físicas são predominantes para os usuários reais.
+
+---
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
-Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
+**[H]**
 
-{{[F/H/?] ...}}
+Em ambientes profissionais, a análise pode estar inserida em uma estrutura organizacional na qual diferentes pessoas possuem responsabilidades distintas.
+
+Um profissional pode realizar a análise, enquanto outro pode ser responsável pela infraestrutura ou tomar decisões com base nos resultados.
+
+Questões como controle de acesso às amostras, responsabilidade sobre análises, compartilhamento de resultados e auditoria podem ser relevantes em determinados contextos.
+
+---
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+**[H]**
 
-## 5.6 Um erro pode produzir consequência relevante? Qual?
+Existe potencial necessidade de histórico e rastreabilidade, principalmente porque uma análise pode precisar ser consultada posteriormente, comparada com outra execução ou utilizada como evidência de uma investigação.
 
-{{[F/H/?] ...}}
+Entretanto, a necessidade e o nível de detalhamento do histórico deverão ser investigados antes de serem transformados em requisitos da interface.
+
+---
+
+## 5.6 Um erro pode produzir consequência relevante?
+
+**[H]**
+
+Sim.
+
+Uma interpretação incorreta dos resultados pode levar a uma compreensão equivocada do comportamento da aplicação.
+
+Em um contexto de Segurança da Informação, isso pode influenciar decisões relacionadas à investigação ou utilização de determinada aplicação.
+
+Também existe a possibilidade de falhas técnicas no próprio ambiente de análise produzirem resultados incompletos ou incorretos.
 
 ---
 
 # 6. Entendendo mercado e alternativas existentes
 
-> Nesta entrega faça apenas um **levantamento inicial**. A análise aprofundada ocorre na Entrega 2.
+> **Observação:** esta seção representa apenas um levantamento inicial. A análise aprofundada será realizada na Entrega 2.
 
 ## 6.1 Como pessoas resolvem problemas semelhantes hoje?
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
-
-## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
-
-{{[F/H/?] ...}}
-
-## 6.3 Quais interfaces profissionais esse público já conhece?
-
-Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
-
-{{[F/H/?] ...}}
-
-## 6.4 O que essas soluções parecem fazer bem?
-
-{{[F/H/?] ...}}
-
-## 6.5 O que parecem fazer mal, dificultar ou não atender?
-
-{{[F/H/?] ...}}
-
-## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
-
-{{[F/H/?] ...}}
+| Windows Sandbox | Usuários técnicos e não técnicos | Executar aplicações/arquivos em ambiente isolado. | [F] |
+| Process Monitor | Profissionais técnicos | Monitorar arquivos, Registro e processos/threads. | [F] |
+| Cuckoo Sandbox | Pesquisadores/analistas de segurança | Executar e analisar arquivos em ambiente isolado. | [F] |
+| ANY.RUN | Analistas/SOC/pesquisadores | Análise interativa de malware e ameaças. | [F] |
+| Joe Sandbox | Analistas/pesquisadores | Análise automatizada e detalhada de arquivos/URLs suspeitos. | [F] |
 
 ---
 
-# 7. Derivando o escopo de IHC da disciplina
+## 6.2 Existem produtos que atuam na mesma área?
 
-## 7.1 Escolha o caminho do projeto
+**[F]**
+
+Sim.
+
+Existem soluções especificamente destinadas à execução e análise de aplicações ou arquivos potencialmente maliciosos, como ANY.RUN, Joe Sandbox e Cuckoo Sandbox.
+
+Também existem ferramentas de isolamento e monitoramento que podem ser utilizadas em atividades relacionadas, como Windows Sandbox e Process Monitor.
+
+---
+
+## 6.3 Quais interfaces profissionais esse público já conhece?
+
+**[H]**
+
+Dependendo do perfil, os usuários podem estar familiarizados com:
+
+- ferramentas de monitoramento;
+- gerenciadores de processos;
+- terminais e consoles;
+- ferramentas de análise de logs;
+- dashboards de segurança;
+- ferramentas de análise de rede;
+- ambientes virtualizados;
+- interfaces de sandbox;
+- sistemas de geração de relatórios.
+
+A Entrega 2 deverá investigar essas interfaces de maneira mais aprofundada.
+
+---
+
+## 6.4 O que essas soluções parecem fazer bem?
+
+**[F/H]**
+
+As soluções analisadas inicialmente demonstram diferentes formas de facilitar a observação do comportamento das aplicações.
+
+O Windows Sandbox prioriza a criação de um ambiente isolado e descartável, com uma experiência relativamente simples para execução de aplicações.
+
+O Process Monitor oferece grande quantidade de informações técnicas e recursos de filtragem para investigar eventos específicos.
+
+O ANY.RUN utiliza interação em tempo real com o ambiente e apresenta relatórios voltados à análise de ameaças.
+
+O Joe Sandbox combina configuração da análise, execução, interação e geração de relatórios detalhados.
+
+O Cuckoo organiza diferentes resultados da análise, incluindo logs, relatórios e arquivos produzidos durante a execução.
+
+---
+
+## 6.5 O que parecem fazer mal, dificultar ou não atender?
+
+**[?]**
+
+Ainda não podemos afirmar quais problemas de usabilidade são efetivamente encontrados pelos usuários dessas soluções sem realizar uma análise sistemática das interfaces e de avaliações/experiências de usuários.
+
+**[H]**
+
+Uma questão que merece investigação é o equilíbrio entre a grande quantidade de informações técnicas disponíveis e a capacidade do usuário de identificar rapidamente os eventos mais relevantes para sua tarefa.
+
+Essa questão será investigada especialmente na **Entrega 2**.
+
+---
+
+## 6.6 Que padrões de interface ou vocabulário parecem familiares?
+
+**[H]**
+
+Alguns termos parecem recorrentes no domínio, como:
+
+- análise;
+- execução;
+- processo;
+- arquivo;
+- evento;
+- rede;
+- log;
+- relatório;
+- amostra;
+- sandbox;
+- ambiente;
+- comportamento;
+- alerta;
+- resultado.
+
+Também parecem recorrentes padrões como seleção/upload de arquivo, configuração de parâmetros, execução de análise, acompanhamento de eventos e consulta de resultados.
+
+A familiaridade desses termos deverá ser investigada com maior profundidade na análise de concorrência.
+
+---
+
+# 7. Derivando o escopo de IHC
+
+## 7.1 Escolha do caminho
 
 ### Caminho A — TCC já possui interface
 
-Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
-
-{{...}}
+> **Não se aplica**, pois o TCC não prevê originalmente uma interface de usuário.
 
 ### Caminho B — TCC não possui interface prevista
 
-Faça o exercício de transferência de uso:
+#### 1. Quem poderia contratar/adotar a solução?
 
-> **Imagine que o TCC foi concluído com sucesso e uma empresa, laboratório ou organização quer transformar a contribuição em algo utilizável. Quem precisaria interagir com ela e para quê?**
+**[H]**
 
-Responda:
+- empresas com equipes de Segurança da Informação;
+- equipes de Infraestrutura de TI;
+- laboratórios de pesquisa;
+- instituições de ensino;
+- laboratórios acadêmicos;
+- pesquisadores independentes.
 
-1. quem poderia contratar/adotar a solução? {{...}}
-2. quem seria o usuário direto? {{...}}
-3. quem administraria/configuraria? {{...}}
-4. quem interpretaria resultados? {{...}}
-5. quem tomaria decisões? {{...}}
-6. quais dados/entradas seriam necessários? {{...}}
-7. quais resultados deveriam ser compreendidos? {{...}}
-8. que erros/rupturas seriam possíveis? {{...}}
+#### 2. Quem seria o usuário direto?
 
-## 7.2 Qual perfil será priorizado no projeto de IHC?
+**[H]**
 
-{{...}}
+> Profissionais de Segurança da Informação, profissionais de Infraestrutura de TI, pesquisadores e estudantes.
 
-**Por que esse perfil foi escolhido?** {{...}}
+#### 3. Quem administraria/configuraria?
 
-## 7.3 Qual objetivo desse usuário será priorizado?
+**[H]**
 
-{{...}}
+> Profissionais responsáveis pela infraestrutura ou pela administração do ambiente de análise.
 
-## 7.4 Que interface será explorada na disciplina?
+#### 4. Quem interpretaria resultados?
 
-Complete:
+**[H]**
 
-> **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
+> Profissionais de Segurança da Informação, Infraestrutura, pesquisadores ou estudantes, dependendo do contexto.
 
-{{...}}
+#### 5. Quem tomaria decisões?
 
-## 7.5 Qual é a relação dessa interface com o TCC?
+**[H]**
+
+> O próprio profissional que realiza a análise ou, em um ambiente organizacional, um responsável pela Segurança da Informação ou Infraestrutura que utilize os resultados para apoiar uma decisão.
+
+#### 6. Quais dados/entradas seriam necessários?
+
+**[H]**
+
+- aplicação/arquivo a ser analisado;
+- parâmetros da execução;
+- duração da análise;
+- configurações do ambiente;
+- eventualmente parâmetros específicos da aplicação.
+
+#### 7. Quais resultados deveriam ser compreendidos?
+
+**[H]**
+
+- processos;
+- alterações em arquivos;
+- alterações em configurações;
+- utilização de recursos;
+- atividades de rede;
+- eventos registrados;
+- sequência temporal de ações;
+- possíveis comportamentos suspeitos;
+- resumo da execução;
+- evidências detalhadas.
+
+#### 8. Que erros/rupturas seriam possíveis?
+
+**[H]**
+
+- falha na execução;
+- aplicação incompatível;
+- monitoramento incompleto;
+- excesso de eventos;
+- dificuldade de interpretação;
+- perda de evidências;
+- configuração inadequada do ambiente;
+- falha na coleta de informações.
+
+---
+
+# 7.2 Qual perfil será priorizado?
+
+Neste momento, propõe-se:
+
+> **Analista de Segurança da Informação**
+
+### Por que esse perfil foi escolhido?
+
+**[H]**
+
+O perfil foi escolhido inicialmente por apresentar forte relação entre suas atividades potenciais e a capacidade central do TCC: executar aplicações potencialmente não confiáveis, observar seu comportamento e interpretar evidências produzidas durante a execução.
+
+Entretanto, essa escolha ainda deverá ser validada pela investigação das próximas entregas.
+
+Profissionais de Infraestrutura, pesquisadores e estudantes também permanecerão como perfis relevantes para o projeto.
+
+---
+
+# 7.3 Qual objetivo será priorizado?
+
+> **Compreender o comportamento de uma aplicação potencialmente não confiável durante sua execução, utilizando as evidências coletadas no ambiente controlado para identificar suas ações e seus efeitos sobre o sistema operacional.**
+
+---
+
+# 7.4 Que interface será explorada?
+
+> **Para fins da disciplina de IHC, será projetada uma interface que permita ao analista de Segurança da Informação utilizar a capacidade de execução controlada e monitoramento do sandbox para analisar aplicações potencialmente não confiáveis, acompanhar seu comportamento e interpretar os resultados obtidos durante a execução, no contexto de uma investigação técnica em ambiente controlado.**
+
+---
+
+# 7.5 Qual é a relação dessa interface com o TCC?
 
 - [ ] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
-- [ ] É uma extensão conceitual criada para a disciplina.
-- [ ] É um protótipo demonstrativo de aplicação potencial.
-- [ ] Outra: {{...}}.
+- [x] **É uma extensão conceitual criada para a disciplina.**
+- [x] **É um protótipo demonstrativo de aplicação potencial.**
+- [ ] Outra.
 
-> **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
+> A interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
 
 ---
 
 # 8. Levantando possibilidades de interação — sem desenhar ainda
 
-A equipe pode registrar possibilidades para investigação. **Não significa que todas serão implementadas.**
-
-Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
-
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim/não/talvez | {{...}} | {{...}} |
-| Configuração/parametrização | sim/não/talvez | {{...}} | {{...}} |
-| Entrada/upload/seleção de dados | sim/não/talvez | {{...}} | {{...}} |
-| Acompanhamento de processamento | sim/não/talvez | {{...}} | {{...}} |
-| Relatório/resultados | sim/não/talvez | {{...}} | {{...}} |
-| Histórico com busca/filtros | sim/não/talvez | {{...}} | {{...}} |
-| Comparação de resultados | sim/não/talvez | {{...}} | {{...}} |
-| Explicabilidade/detalhamento | sim/não/talvez | {{...}} | {{...}} |
-| Administração/configurações globais | sim/não/talvez | {{...}} | {{...}} |
-| Usuários/perfis/permissões | sim/não/talvez | {{...}} | {{...}} |
-| CRUD de entidade do domínio | sim/não/talvez | {{...}} | {{...}} |
-| Auditoria/logs | sim/não/talvez | {{...}} | {{...}} |
-| Alertas/ocorrências | sim/não/talvez | {{...}} | {{...}} |
-| Ajuda/documentação | sim/não/talvez | {{...}} | {{...}} |
-
-> **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
+| Dashboard/visão geral | **Sim** | Apresentar resumo do comportamento e estado da análise. | [H] |
+| Configuração/parametrização | **Sim** | Definir parâmetros antes da execução. | [H] |
+| Entrada/upload/seleção | **Sim** | Selecionar a aplicação a ser analisada. | [H] |
+| Acompanhamento de processamento | **Sim** | Acompanhar a execução e eventos em tempo real. | [H] / soluções existentes |
+| Relatório/resultados | **Sim** | Consolidar e interpretar evidências. | [H] / soluções existentes |
+| Histórico com busca/filtros | **Talvez** | Consultar análises anteriores. | [H] |
+| Comparação de resultados | **Talvez** | Comparar execuções ou aplicações. | [H] |
+| Explicabilidade/detalhamento | **Sim** | Permitir investigar eventos específicos. | [H] |
+| Administração/configurações globais | **Talvez** | Administrar o ambiente. | [H] |
+| Usuários/perfis/permissões | **Talvez** | Controlar acesso em contexto organizacional. | [?] |
+| CRUD de entidade do domínio | **Não inicialmente** | Nenhuma necessidade identificada. | [H] |
+| Auditoria/logs | **Sim** | Registrar e consultar eventos da análise. | [H] |
+| Alertas/ocorrências | **Sim** | Destacar eventos potencialmente relevantes. | [H] |
+| Ajuda/documentação | **Talvez** | Explicar informações técnicas para diferentes perfis. | [H] |
 
 ---
 
 # 9. Benefícios e ações iniciais
 
-## 9.1 Qual benefício concreto o projeto de IHC pretende oferecer?
+## 9.1 Qual benefício concreto o projeto pretende oferecer?
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Compreensão mais aprofundada do comportamento da aplicação | Dificuldade de observar todas as ações realizadas durante a execução | Analista de Segurança | [H] |
+| Organização das evidências | Grande quantidade de informações técnicas | Analista/Pesquisador | [H] |
+| Acompanhamento da execução | Necessidade de observar eventos durante o processamento | Analista | [H] |
+| Consulta estruturada dos resultados | Necessidade de compreender o que ocorreu | Todos os perfis | [H] |
+| Apoio à investigação | Necessidade de analisar aplicações desconhecidas | Segurança/Infraestrutura | [H] |
+| Ambiente para experimentação | Necessidade de executar aplicações em contexto controlado | Pesquisadores/Estudantes | [H] |
+
+---
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | {{ação}} | {{objetivo}} | alta/média/baixa |
+| F01 | Selecionar uma aplicação | Iniciar uma análise | Alta |
+| F02 | Configurar parâmetros da execução | Definir o contexto da análise | Alta |
+| F03 | Iniciar uma execução | Observar o comportamento da aplicação | Alta |
+| F04 | Acompanhar a execução | Identificar eventos relevantes | Alta |
+| F05 | Consultar processos | Compreender atividades realizadas | Alta |
+| F06 | Consultar alterações em arquivos/configurações | Identificar efeitos sobre o SO | Alta |
+| F07 | Consultar atividades de rede | Compreender comunicações realizadas | Média/Alta |
+| F08 | Consultar utilização de recursos | Avaliar comportamento e impacto | Média |
+| F09 | Consultar eventos detalhados | Investigar comportamentos específicos | Alta |
+| F10 | Visualizar resumo da análise | Compreender rapidamente o resultado | Alta |
+| F11 | Gerar/consultar relatório | Documentar os resultados | Alta |
+| F12 | Consultar histórico | Recuperar análises anteriores | Média |
 
-## 9.3 Tecnologias/restrições já definidas no TCC
+---
 
-A tecnologia aparece **agora**, depois do entendimento do uso.
+# 9.3 Tecnologias/restrições já definidas no TCC
+
+Como o exercício determina que a tecnologia apareça **depois do entendimento do uso**, neste momento podemos registrar apenas as restrições que já estão relacionadas ao domínio.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Ambiente sandbox | Necessário para executar aplicações de forma controlada. | O usuário poderá precisar selecionar/configurar o ambiente de execução. |
+| Sistema operacional hospedeiro | O comportamento da aplicação será observado em relação ao SO. | Informações apresentadas deverão fazer sentido dentro do contexto do SO analisado. |
+| Isolamento | Reduzir o impacto direto da aplicação sobre o ambiente principal. | O estado e as limitações do ambiente deverão ser compreensíveis ao usuário. |
+| Monitoramento | Necessário para coletar informações sobre a execução. | A interface poderá apresentar grande quantidade de eventos. |
+| Coleta de eventos | Necessária para posterior análise. | Será necessário organizar e priorizar informações para evitar sobrecarga cognitiva. |
 
 ---
 
 # 10. Hipóteses e dúvidas prioritárias
 
+Estas são as hipóteses consideradas mais importantes para as próximas entregas:
+
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | {{...}} | {{...}} | Entrega 2/3/7/... |
-| H02 | {{...}} | {{...}} | {{...}} |
-| H03 | {{...}} | {{...}} | {{...}} |
+| **H01** | Usuários podem se beneficiar de uma análise aprofundada do comportamento de aplicações em ambiente controlado. | É a justificativa central da aplicação prática. | Entregas 2, 3 e 7 |
+| **H02** | Processos, arquivos, configurações, rede e recursos estão entre as informações relevantes para compreender o comportamento de uma aplicação. | Define quais dados deverão receber destaque. | Entregas 2, 3 e 7 |
+| **H03** | A quantidade de informações produzidas durante uma análise pode dificultar sua interpretação. | Influencia diretamente a organização da interface. | Entregas 2, 3 e 7 |
+| **H04** | Diferentes perfis — Segurança, Infraestrutura, pesquisa e ensino — possuem necessidades distintas ao analisar aplicações. | Pode exigir diferentes formas de apresentação das informações. | Entregas 2 e 3 |
+| **H05** | Um relatório estruturado pode facilitar a compreensão e documentação dos resultados. | Pode justificar uma funcionalidade central da interface. | Entregas 2, 3 e 7 |
+| **H06** | O histórico de análises pode ser útil para consulta e comparação posterior. | Define se histórico/comparação devem fazer parte do escopo. | Entregas 2, 3 e 7 |
+| **H07** | Uma interface que organiza eventos técnicos em informações contextualizadas pode facilitar a interpretação em comparação com logs brutos. | É uma hipótese central de IHC sobre apresentação da informação. | Entregas 2, 3 e 7 |
+| **H08** | Analistas de Segurança constituem o perfil mais adequado para ser o usuário prioritário. | Define persona, tarefas e protótipo posteriores. | Entregas 2 e 3 |
+| **H09** | Pesquisadores e estudantes possuem necessidades suficientemente relevantes para serem considerados usuários do sistema. | Define amplitude do público-alvo. | Entregas 2 e 3 |
+| **H10** | A interface deve apresentar tanto uma visão resumida quanto informações técnicas detalhadas. | Pode definir arquitetura de informação e níveis de detalhe. | Entregas 2, 3 e 7 |
 
-Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
+> Essas hipóteses deverão ser registradas também na `RASTREABILIDADE.md`.
 
 ---
 
@@ -409,71 +760,75 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | {{...}} |
-| O TCC já previa interface? | {{...}} |
-| Quem é o usuário prioritário de IHC? | {{...}} |
-| O que ele precisa alcançar? | {{...}} |
-| Qual problema/atividade será estudado? | {{...}} |
-| Como isso acontece hoje? | {{...}} |
-| Qual é o contexto de uso? | {{...}} |
-| Que interface/recorte será explorado? | {{...}} |
-| Como a interface se relaciona ao TCC? | {{...}} |
-| Quais pontos ainda são hipóteses? | {{H01...}} |
-
-### Delimitação
-
-**Dentro do escopo de IHC:** {{...}}  
-**Fora do escopo de IHC:** {{...}}  
-**Dentro do escopo formal do TCC:** {{...}}  
-**Interface da disciplina será implementada no TCC?** não definido / sim / não — {{justificativa, se houver}}
+| Qual é a contribuição central do TCC? | Implementar e analisar um ambiente sandbox capaz de executar aplicações potencialmente não confiáveis de forma controlada e observar seus comportamentos e efeitos sobre o sistema operacional. |
+| O TCC já previa interface? | Não. |
+| Quem é o usuário prioritário de IHC? | Inicialmente, o Analista de Segurança da Informação. A escolha ainda é uma hipótese. |
+| O que ele precisa alcançar? | Compreender o comportamento de uma aplicação durante sua execução e analisar seus efeitos sobre o sistema operacional. |
+| Qual problema/atividade será estudado? | A execução controlada e análise aprofundada do comportamento de aplicações potencialmente não confiáveis. |
+| Como isso acontece hoje? | Por meio de diferentes ferramentas e abordagens de isolamento, monitoramento e análise. A combinação utilizada pelo público-alvo ainda precisa ser investigada. |
+| Qual é o contexto de uso? | Ambientes de Segurança da Informação, Infraestrutura, pesquisa e ensino. |
+| Que interface/recorte será explorado? | Interface para seleção, execução, acompanhamento, visualização, interpretação e documentação dos resultados de análises realizadas no sandbox. |
+| Como a interface se relaciona ao TCC? | É uma extensão conceitual/protótipo demonstrativo criado para a disciplina de IHC. |
+| Quais pontos ainda são hipóteses? | H01–H10, principalmente necessidades dos usuários, relevância das informações, público prioritário e benefícios da interface. |
 
 ---
 
-# 12. Como esta entrega alimenta as próximas
+# 12. Delimitação
 
-- **Entrega 2:** verifica mercado, concorrentes e interfaces profissionais representativas.
-- **Entrega 3:** detalha perfis e contexto.
-- **Entrega 4:** aprofunda situações problemáticas.
-- **Entrega 5:** modela tarefas centrais.
-- **Entrega 6:** experimenta alternativas em baixa fidelidade.
-- **Entrega 7:** investiga hipóteses com dados.
-- **Entrega 8:** define restrições e metas de usabilidade.
-- **Entregas 9–11:** transformam o recorte em modelo de interação e protótipo.
-- **Entregas 12–14:** avaliam a interface construída na disciplina.
+## Dentro do escopo de IHC
 
-A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser revisada quando surgirem evidências.
+Investigação das pessoas que poderiam utilizar o sandbox, suas atividades, objetivos, necessidades e dificuldades, além do projeto de uma possível interface para selecionar aplicações, iniciar e acompanhar análises, visualizar eventos, interpretar resultados e gerar/consultar relatórios.
 
----
+## Fora do escopo de IHC
 
-# 13. Relação com INOVA e comunicação do projeto
+A implementação dos mecanismos internos de isolamento, monitoramento, execução e coleta de eventos do sandbox, exceto quando esses aspectos forem necessários para compreender as possibilidades e limitações da interação.
 
-Prepare uma explicação de até três frases:
+## Dentro do escopo formal do TCC
 
-1. **Problema/atividade humana:** {{...}}
-2. **Contribuição técnica do TCC:** {{...}}
-3. **Como uma pessoa poderia utilizar essa contribuição:** {{...}}
+Implementação e análise do ambiente sandbox para execução controlada de aplicações potencialmente não confiáveis e investigação dos comportamentos e efeitos produzidos por essas aplicações no sistema operacional.
 
-Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
+## A interface da disciplina será implementada no TCC?
+
+> **Não definido.**
+
+Inicialmente, a interface será considerada um artefato de aprendizagem e protótipo demonstrativo da disciplina de IHC.
+
+Sua eventual implementação ou incorporação ao TCC dependerá de decisão posterior da equipe e do orientador.
 
 ---
 
-# Checklist de qualidade
+# 13. Como esta entrega alimenta as próximas
 
-- [ ] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
-- [ ] A equipe declarou se o TCC já previa interface.
-- [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso.
-- [ ] A interface de IHC não foi apresentada como obrigação automática do TCC.
-- [ ] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
-- [ ] Usuários diretos e stakeholders foram diferenciados.
-- [ ] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
-- [ ] Objetivo do usuário não foi confundido com objetivo do projeto.
-- [ ] Processo/problema atual foi descrito antes da solução.
-- [ ] Existe situação concreta de uso/problema.
-- [ ] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
-- [ ] Mercado/alternativas existentes foram levantados inicialmente.
-- [ ] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
-- [ ] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
-- [ ] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
-- [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
-- [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
-- [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+- **Entrega 2:** investigar concorrentes, ferramentas análogas e interfaces profissionais.
+- **Entrega 3:** aprofundar os perfis de Segurança, Infraestrutura, pesquisa e ensino e definir personas/contextos.
+- **Entrega 4:** transformar as dificuldades encontradas em cenários concretos.
+- **Entrega 5:** decompor as atividades principais em tarefas.
+- **Entrega 6:** experimentar diferentes alternativas de interação.
+- **Entrega 7:** investigar as hipóteses com dados.
+- **Entrega 8:** estabelecer metas e critérios de usabilidade.
+- **Entregas 9–11:** transformar o conhecimento acumulado em modelo de interação, MoLIC e protótipo.
+- **Entregas 12–14:** avaliar e melhorar a interface.
+
+A Entrega 1 estabelece a base conceitual para as etapas seguintes. As hipóteses levantadas poderão ser confirmadas, modificadas ou descartadas conforme novas evidências sejam obtidas.
+
+---
+
+# 14. Relação com INOVA e comunicação do projeto
+
+> **Problema/atividade humana:** Pessoas que trabalham ou estudam com sistemas operacionais podem precisar compreender de forma aprofundada o que uma aplicação realiza durante sua execução, especialmente quando seu comportamento ainda é desconhecido.
+>
+> **Contribuição técnica do TCC:** O projeto implementa e analisa um ambiente sandbox capaz de executar aplicações potencialmente não confiáveis de forma controlada e observar seus comportamentos e efeitos sobre o sistema operacional.
+>
+> **Como uma pessoa poderia utilizar essa contribuição:** Um usuário poderia executar uma aplicação no ambiente controlado, acompanhar os eventos produzidos, analisar as alterações realizadas e consultar um relatório estruturado sobre seu comportamento.
+
+---
+
+# 15. Referências iniciais
+
+- MICROSOFT. **Windows Sandbox**. Microsoft Learn.
+- MICROSOFT. **Process Monitor**. Microsoft Sysinternals.
+- CUCKOO SANDBOX. **Cuckoo Sandbox Documentation**.
+- ANY.RUN. **Interactive Online Malware Sandbox**.
+- JOE SANDBOX. **Automated Malware Analysis**.
+
+> As referências serão aprofundadas e formalizadas ao longo das próximas entregas, especialmente durante a análise de concorrência da Entrega 2.
