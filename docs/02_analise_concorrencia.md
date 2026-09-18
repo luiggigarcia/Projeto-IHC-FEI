@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 03/09/2026  
-**Status:** 🟨 Em desenvolvimento  
+**Status:** 🟩 Concluído 
 **Integrante:** Luiggi Paschoalini Garcia — 22.122.006-4
 
 ---
@@ -691,8 +691,8 @@ Outros públicos permanecem como possibilidades:
 - [x] O mapa inicial de alternativas da Entrega 1 foi revisitado.
 - [x] Foi selecionada uma interface representativa para análise.
 - [x] Há pelo menos uma análise completa para o integrante da equipe.
-- [ ] Prints legíveis da interface foram adicionados ao diretório `assets/02_concorrencia/`.
-- [ ] Os prints mostram telas/estados relevantes da interface.
+- [x] Prints legíveis da interface foram adicionados ao diretório `assets/02_concorrencia/`.
+- [x] Os prints mostram telas/estados relevantes da interface.
 - [x] O ANY.RUN foi analisado sob a perspectiva de IHC.
 - [x] Padrões de interface foram relacionados às tarefas do público-alvo.
 - [x] O ANY.RUN foi utilizado como referência e não como modelo a ser copiado.
