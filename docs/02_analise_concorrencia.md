@@ -1,7 +1,8 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 03/09/2026  
-**Status:** 🟩 Concluído 
+**Status:** 🟩 Concluído
+
 **Integrante:** Luiggi Paschoalini Garcia — 22.122.006-4
 
 ---
